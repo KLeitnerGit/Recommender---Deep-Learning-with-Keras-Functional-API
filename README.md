@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The "Recommender - Deep Learning with Keras Functional API" project is a deep learning-based approach to building a music recommendation system. The project leverages a subset of a comprehensive dataset from the Deezer Streaming Service, as provided in the Deezer Streaming Songs User Analytics Competition on Kaggle.
+The "Recommender - Deep Learning with Keras Functional API" project is a deep learning-based approach to building a music recommendation system. The project leverages a subset of a comprehensive dataset from the Deezer Streaming Service, as provided in the Deezer Streaming Songs User Analytics Competition on Kaggle https://www.kaggle.com/c/dsg17-online-phase/overview.
 
 ## Objective
 The primary objective of this project is to predict whether users of the Deezer app will listen to a given song for at least 30 seconds. This binary classification problem (is_listened = 1 if listened for over 30 seconds, otherwise 0) aims to model user preferences and enhance the listening experience by recommending tracks that align with their tastes.
