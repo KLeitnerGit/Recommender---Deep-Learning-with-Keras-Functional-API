@@ -7,19 +7,27 @@ The "Recommender - Deep Learning with Keras Functional API" project is a deep le
 ## Objective
 The primary objective of this project is to predict whether users of the Deezer app will listen to a given song for at least 30 seconds. This binary classification problem (is_listened = 1 if listened for over 30 seconds, otherwise 0) aims to model user preferences and enhance the listening experience by recommending tracks that align with their tastes.
 
-## Dataset
-The dataset originally consists of 7.5 million entries, detailing user interactions with the streaming platform. Due to computational constraints, a 1% random sample of this dataset is utilized for the project. Key features include:
 
-User-specific information (e.g., user_id, user_gender, user_age).
-Track-specific details (e.g., genre_id, media_id, album_id).
-Contextual information (e.g., context_type indicating the situation in which a song was played).
+## Data Preprocessing
 
-## Approach
-The project employs the Keras Functional API for developing the recommendation models, notable for its flexibility in handling models with complex architectures, non-linear topology, and multiple inputs or outputs. Two primary models are constructed:
+A 1% random sample of the original dataset is used due to computational constraints. The dataset includes various features like user ID, media ID, genre ID, context type, and the target variable is_listened.
 
-***Collaborative Filtering Model:*** This model focuses on learning user and media embeddings to understand and predict user preferences based on historical interactions.
-**Hybrid Model:** An advanced version of the first model, it integrates additional contextual information (context_type) to provide a more nuanced understanding of user preferences in different situations.
-**Key Features**
-Deep Learning: Utilization of neural networks to capture the complex relationships and patterns in user-music interactions.
-Keras Functional API: Enabling the creation of sophisticated model architectures beyond simple sequential layers.
-Embedding Layers: Learning dense representations of users and media items to capture their latent features.
+## Model Architecture
+
+Two baseline models are developed:
+
+Collaborative Filtering Model: Uses user and media embeddings.
+Hybrid Model: Incorporates context type along with user and media embeddings.
+Both models are implemented using the Keras Functional API, allowing for flexible model architectures and the integration of different data types.
+
+## Training and Evaluation
+
+The models are trained on 80% of the data and tested on the remaining 20%. Performance metrics such as accuracy, precision, recall, and F1-score are used to evaluate the models.
+
+## Results
+
+The Collaborative Filtering Model showed an accuracy of approximately 70% on the test set.
+The Hybrid Model, which also includes context type, achieved an accuracy of around 71%.
+Conclusion
+
+These baseline models provide a starting point for building more complex recommendation systems. Future improvements could include more sophisticated feature engineering, hyperparameter tuning, and the incorporation of additional data sources.
