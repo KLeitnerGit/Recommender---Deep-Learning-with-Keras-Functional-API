@@ -28,6 +28,5 @@ The models are trained on 80% of the data and tested on the remaining 20%. Perfo
 
 The Collaborative Filtering Model showed an accuracy of approximately 70% on the test set.
 The Hybrid Model, which also includes context type, achieved an accuracy of around 71%.
-Conclusion
 
 These baseline models provide a starting point for building more complex recommendation systems. Future improvements could include more sophisticated feature engineering, hyperparameter tuning, and the incorporation of additional data sources.
